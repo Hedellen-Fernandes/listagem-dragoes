@@ -1,0 +1,48 @@
+{
+	"name": "node-base",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "npx nodemon --exec ts-node -r tsconfig-paths/register --files src/index.ts",
+		"typeorm": "./node_modules/.bin/ts-node ./node_modules/typeorm/cli.js",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Hedellen-Fernandes/node-base.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Hedellen-Fernandes/node-base/issues"
+	},
+	"homepage": "https://github.com/Hedellen-Fernandes/node-base#readme",
+	"dependencies": {
+		"@types/bcryptjs": "^2.4.2",
+		"bcryptjs": "^2.4.3",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongodb": "^3.6.1",
+		"mongoose": "^5.10.4",
+		"mssql": "^6.2.1",
+		"nodemon": "^2.0.4",
+		"reflect-metadata": "^0.1.13",
+		"ts-node": "^9.0.0",
+		"typeorm": "^0.2.25",
+		"typescript": "^4.0.2"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.8",
+		"@types/jest": "^26.0.14",
+		"@types/jsonwebtoken": "^8.5.0",
+		"@types/mongoose": "^5.7.36",
+		"@types/node": "^14.6.4",
+		"@types/supertest": "^2.0.10",
+		"jest": "^26.4.2",
+		"supertest": "^4.0.2",
+		"ts-jest": "^26.3.0",
+		"tsconfig-paths": "^3.9.0"
+	}
+}
