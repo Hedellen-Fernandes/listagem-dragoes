@@ -1,5 +1,6 @@
 import mongoose, { Connection, DocumentQuery, Model, Query } from 'mongoose';
 import IDb from '../../interfaces/IDb';
+import globals from '@config/globals';
 
 class mongoDb extends IDb {
 	schema: Model<any>
@@ -17,9 +18,9 @@ class mongoDb extends IDb {
 			useUnifiedTopology: true,
 		};
 
-		await mongoose.connect('mongodb://root:root@localhost:27017/financialManagement', connectionParams, (error) => {
+		await mongoose.connect(`mongodb://${globals.MONGO_DB_USER}:${globals.MONGO_DB_PASSWORD}@localhost:27017/${globals.MONGO_DB_DATABASE}`, connectionParams, (error) => {
 			if (!error) return;
-			console.log('[DATABASE] Connection failed!');
+				console.log('[DATABASE] Connection failed!');
 		});
 
 		const { connection } = mongoose;
