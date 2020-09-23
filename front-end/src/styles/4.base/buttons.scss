@@ -1,0 +1,95 @@
+/*  ==========================================================================
+    Buttons
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		.ui-button {
+			padding: 15px 10px;
+
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 16px;
+			font-weight: 600;
+
+			border: 0;
+			cursor: pointer;
+
+			@include transition(.2s ease-in-out);
+		}
+
+		.ui-button--contained-green {
+			background-color: $color-success-light;
+			color: #fff;
+
+			&:hover {
+				background-color: $color-success;
+				border-color: $color-success;
+				color: #fff;
+
+				@include transition(.2s ease-in);
+			}
+		}
+
+		.ui-button--contained-red {
+			background-color: $color-danger;
+			color: #fff;
+
+			&:hover {
+				background-color: darken($color: $color-danger, $amount: 10%);
+				border-color: darken($color: $color-danger, $amount: 10%);
+				color: #fff;
+
+				@include transition(.2s ease-in);
+			}
+		}
+		
+		.ui-button--contained-yellow {
+			background-color: $color-warning;
+			color: #fff;
+
+			&:hover {
+				background-color: darken($color: $color-warning, $amount: 10%);
+				border-color: darken($color: $color-warning, $amount: 10%);
+				color: #fff;
+
+				@include transition(.2s ease-in);
+			}
+		}
+
+		.ui-button--contained-blue {
+			background-color: $color-primary;
+			color: #fff;
+
+			&:hover {
+				background-color: darken($color: $color-primary, $amount: 10%);
+				border-color: darken($color: $color-primary, $amount: 10%);
+				color: #fff;
+
+				@include transition(.2s ease-in);
+			}
+		}
+
+
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

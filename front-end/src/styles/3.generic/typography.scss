@@ -1,0 +1,30 @@
+/*  ==========================================================================
+    Typography
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		h1 {
+			font-size: 28px;
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

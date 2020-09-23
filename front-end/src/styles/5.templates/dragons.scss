@@ -1,0 +1,38 @@
+/*  ==========================================================================
+    Dragons
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+     @media only screen {
+        #manipulateDragon {
+            display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+            justify-content: center;
+            
+            .container-form {
+                width: 100%;
+                max-width: 600px
+            }
+        }
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

@@ -1,0 +1,86 @@
+/*  ==========================================================================
+    Login
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+	@media only screen {
+		#loginView {
+			display: flex;
+
+			flex-direction: row;
+			align-items: stretch;
+			justify-content: flex-start;
+
+			width: 100%;
+			height: 100vh;
+
+			#banner {
+				position: relative;
+
+				width: calc(100% - 600px);
+				height: 100vh;
+
+				background: url(../../images/backgrounds/cover-dragon.jpg) center center no-repeat;
+				background-size: cover;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+
+					width: 100%;
+					height: 100%;
+
+					background: rgba($color: #fafafa, $alpha: .3)
+				}
+			}
+
+			#loginSide {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				width: 600px;
+				height: auto;
+				min-height: 100vh;
+				padding: 20px;
+
+				background: $color-gray-lightest;
+			}
+		}
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+	/*
+     * CSS for devices with resolution up to a medium of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint-medium) {
+		#loginView {
+			#banner { display: none; }
+			#loginSide { 
+				width: 100%;
+			}
+		}
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

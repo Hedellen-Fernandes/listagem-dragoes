@@ -1,0 +1,29 @@
+::-moz-selection {
+    background: #666;
+    text-shadow: none;
+    color: #fff;
+}
+
+::selection {
+    background: #666;
+    text-shadow: none;
+    color: #fff;
+}
+
+body {
+    overflow-x: hidden;
+	font-family: $font-family;
+	margin: 0;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img,
+object,
+embed,
+iframe { max-width: 100%; }
+
+img { height: auto; }
+
+* { @include box-sizing(); }

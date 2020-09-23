@@ -1,0 +1,89 @@
+/*  ==========================================================================
+    Tables
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+     @media only screen {
+        .table-responsive {
+            width: 100%;
+            margin-bottom: 90px;
+        }
+
+		table {
+            width: 100%;
+            min-width: 650px;
+            border-spacing: 0;
+            border-collapse: collapse;
+
+            thead, tbody {
+                th, td {
+                    padding: 15px 15px;
+                    text-align: left;
+                }
+            }
+
+            thead {
+                tr {
+                    background: $color-gray-lightest;
+
+                    th {
+                        border-bottom: 2px solid $color-gray-darkest;
+
+                        &.actions {
+                            text-align: right;
+                        }
+                        
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    background: $color-gray-lightest;
+                    border-top: 2px solid #fff;
+
+                    &:nth-child(even) {
+                        background: $color-gray-light;
+                    }
+
+                    td {
+                        &.actions {
+                            text-align: right;
+                        }
+
+                        .ui-button {
+                            padding: 10px 15px;
+                            font-size: 14px;
+                            text-transform: capitalize;
+
+                            &:nth-child(even) {
+                                margin: 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+        .table-responsive {
+            overflow-x: scroll;
+        }
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }

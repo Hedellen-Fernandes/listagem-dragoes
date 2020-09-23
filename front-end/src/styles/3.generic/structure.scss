@@ -1,0 +1,54 @@
+/*  ==========================================================================
+    Layout
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+    @media only screen {
+        .container {
+          	width: $breakpoint-large;
+          	margin: 0 auto;
+
+          	display: flex;
+        }
+      }
+	  
+	/*
+	* CSS for devices with resolution up to a large of breakpoint
+	*/
+
+	@media only screen and (max-width: $breakpoint-large) {
+		.container {
+			width: $breakpoint-medium;
+		}
+	}
+
+    /*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint) {
+
+    }
+
+	
+	/*
+     * CSS for devices with resolution up to a maximum of breakpoint
+     */
+
+    @media only screen and (max-width: $breakpoint-medium) {
+		.container {
+			width: 100%;
+			padding: 0 60px;
+		}
+    }
+
+    /*
+     * CSS for devices with resolution up to the minimum breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint+1) {
+
+    }
