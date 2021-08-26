@@ -12,7 +12,7 @@ const ManipulateDragon = () => {
 	const pageStyle = setPageStyle(location.pathname, params.id, params.readOnly);
 	
 	return (
-		<>
+		<div>
 			<header className='header-page'>
 				<div className="container">
 					<h1>{ pageStyle.title }</h1>
@@ -23,7 +23,7 @@ const ManipulateDragon = () => {
 					<ManipulateDragonComponent />
 				</div>
 			</section>
-		</>
+		</div>
 	);
 };
 
